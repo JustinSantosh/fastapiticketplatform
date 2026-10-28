@@ -48,7 +48,7 @@ POST /api/tickets/42/status   {status:"resolved", version:3}
   └─ 200 with the updated ticket (version 4)
 ```
 
-Domain exceptions (`NotFound`, `PermissionDenied`, `TransitionError`, `VersionConflict`) are raised in services and rules. One handler in `main.py` turns each into an HTTP status with a consistent body `{"detail": ..., "code": ...}`.
+Domain exceptions (`NotFound`, `PermissionDenied`, `RuleViolation`, `VersionConflict`) are raised in services and rules. One handler in `main.py` turns each into an HTTP status with a consistent body `{"detail": ..., "code": ...}`.
 
 ## 3. Where each business rule lives
 

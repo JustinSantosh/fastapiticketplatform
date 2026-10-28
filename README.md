@@ -4,6 +4,20 @@ A support-ticket app. **Users** raise tickets and comment on them; **agents** se
 
 **Stack:** React 18 (Vite) · FastAPI · SQLAlchemy 2.0 · Pydantic v2 · PostgreSQL · Alembic · JWT auth
 
+## Screenshots
+
+**Agent dashboard.** Agents see every ticket, with *Raised by* and *Assignee* columns and an assignee filter.
+
+![Agent dashboard showing all tickets with status, priority, raised by and assignee](docs/screenshots/agent-dashboard.png)
+
+**User dashboard.** A user sees only the tickets they raised and can create new ones.
+
+![User dashboard showing only Alice's own tickets and a New ticket button](docs/screenshots/user-dashboard.png)
+
+**Login.** Client-side validation, a generic server error for bad credentials, and demo-account shortcuts.
+
+<img src="docs/screenshots/login.png" alt="Login page showing an 'Invalid email or password' error and the demo accounts" width="420">
+
 | Doc | What's in it |
 |---|---|
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How the frontend, backend and database fit together |

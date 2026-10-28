@@ -8,6 +8,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Seeded demo accounts (backend/scripts/seed.py). Demo only.
 const DEMO = [
   ["alice@example.com", "User"],
+  ["bob@example.com", "User"],
   ["agent.sam@example.com", "Agent"],
   ["agent.priya@example.com", "Agent"],
 ];
